@@ -12,6 +12,9 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 import os
 from pathlib import Path
 
+# BASE_DIR is the directory containing manage.py
+BASE_DIR = Path(__file__).resolve().parent.parent
+
 # Add this line to specify the directory for collected static files
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
