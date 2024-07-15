@@ -143,4 +143,8 @@ STATIC_URL = "static/"
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 CORS_ALLOW_ALL_ORIGINS = True
-ALLOWED_HOSTS = ['your-ec2-public-ip']
+ALLOWED_HOSTS = ['54.91.48.84']
+
+CORS_ALLOWED_ORIGINS = [
+    'http://booklist1.s3-website-us-east-1.amazonaws.com',
+]
